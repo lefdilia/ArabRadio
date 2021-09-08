@@ -1,0 +1,679 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A13947326338F62003FE3DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A13947226338F62003FE3DD /* AppDelegate.swift */; };
+		8A13947526338F62003FE3DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A13947426338F62003FE3DD /* SceneDelegate.swift */; };
+		8A13947726338F62003FE3DD /* RadioListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A13947626338F62003FE3DD /* RadioListController.swift */; };
+		8A13947C26338F62003FE3DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A13947B26338F62003FE3DD /* Assets.xcassets */; };
+		8A13947F26338F62003FE3DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A13947D26338F62003FE3DD /* LaunchScreen.storyboard */; };
+		8A1A587D26822DAD00823810 /* AVPlayerSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A587C26822DAD00823810 /* AVPlayerSingleton.swift */; };
+		8A2C1A612691C485006121E0 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2C1A602691C485006121E0 /* UIColor+Ext.swift */; };
+		8A2C1A632691C70A006121E0 /* PlayerDetailsView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2C1A622691C70A006121E0 /* PlayerDetailsView+Ext.swift */; };
+		8A2C1A6726923692006121E0 /* BannerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2C1A6626923692006121E0 /* BannerManager.swift */; };
+		8A6D819E269717FF0097A8F8 /* SavedFilesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6D819D269717FF0097A8F8 /* SavedFilesController.swift */; };
+		8A6D81A02697381D0097A8F8 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6D819F2697381D0097A8F8 /* AppConfig.swift */; };
+		8A6D81A22697430E0097A8F8 /* URL+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6D81A12697430E0097A8F8 /* URL+Ext.swift */; };
+		8A6D81A4269756FA0097A8F8 /* SavedFilesControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6D81A3269756FA0097A8F8 /* SavedFilesControllerCell.swift */; };
+		8A6D81A6269759AA0097A8F8 /* Records.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6D81A5269759AA0097A8F8 /* Records.swift */; };
+		8A7991E7268B4CA400C9C5C4 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7991E6268B4CA400C9C5C4 /* NetworkRequest.swift */; };
+		8A804C15269362B3000F6BAE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A804C17269362B3000F6BAE /* Localizable.strings */; };
+		8A804C1B26936C75000F6BAE /* Localizable+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A804C1A26936C75000F6BAE /* Localizable+Ext.swift */; };
+		8A8D3288267A706D00C9A597 /* PlayerDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A8D3287267A706D00C9A597 /* PlayerDetailsView.xib */; };
+		8A8D328A267A730300C9A597 /* PlayerDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8D3289267A730300C9A597 /* PlayerDetailsView.swift */; };
+		8A8DB84E2633C16200181DC6 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8DB84D2633C16200181DC6 /* Theme.swift */; };
+		8A8DB8562633C89900181DC6 /* RadioListControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8DB8552633C89900181DC6 /* RadioListControllerCell.swift */; };
+		8A8DB8662633D83F00181DC6 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A8DB8652633D83F00181DC6 /* Colors.xcassets */; };
+		8A93622D263CA69F00E8C5A3 /* StationsModels.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8A93622B263CA69F00E8C5A3 /* StationsModels.xcdatamodeld */; };
+		8A93622F263CA88200E8C5A3 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A93622E263CA88200E8C5A3 /* CoreDataManager.swift */; };
+		8A99804726E22BFE00842F45 /* TitilliumWeb-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A99804426E22BFE00842F45 /* TitilliumWeb-SemiBold.ttf */; };
+		8A99804826E22BFE00842F45 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A99804526E22BFE00842F45 /* OpenSans-Regular.ttf */; };
+		8A99804926E22BFE00842F45 /* TitilliumWeb-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A99804626E22BFE00842F45 /* TitilliumWeb-Regular.ttf */; };
+		8A9A703E2647704F00B009D7 /* SettingsControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9A703D2647704F00B009D7 /* SettingsControllerCell.swift */; };
+		8A9E00512634F03100176085 /* StationJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E00502634F03100176085 /* StationJson.swift */; };
+		8A9E006D26350FBD00176085 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E006C26350FBD00176085 /* SettingsController.swift */; };
+		8A9E40352690A94F004BDD16 /* GoogleMobileAds.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9E40342690A94F004BDD16 /* GoogleMobileAds.xcframework */; };
+		8A9E40372690F47E004BDD16 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A9E40362690F47E004BDD16 /* GoogleService-Info.plist */; };
+		8A9E4039269104D2004BDD16 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E4038269104D2004BDD16 /* UIView+Ext.swift */; };
+		8A9E46AE2684B39A0044D510 /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E46AD2684B39A0044D510 /* Double+Ext.swift */; };
+		8AA466EE2649EF5800245851 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA466ED2649EF5800245851 /* String+Ext.swift */; };
+		8AA59E6B26E8D3B90041DEE1 /* Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AA59E6526E8D3B90041DEE1 /* Settings.png */; };
+		8AA59E6C26E8D3B90041DEE1 /* Sleep-Mode.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AA59E6626E8D3B90041DEE1 /* Sleep-Mode.png */; };
+		8AA59E6D26E8D3B90041DEE1 /* Radio-List.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AA59E6726E8D3B90041DEE1 /* Radio-List.png */; };
+		8AA59E6E26E8D3B90041DEE1 /* Recorded-Audio.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AA59E6826E8D3B90041DEE1 /* Recorded-Audio.png */; };
+		8AA59E6F26E8D3B90041DEE1 /* Countries.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AA59E6926E8D3B90041DEE1 /* Countries.png */; };
+		8AA59E7026E8D3B90041DEE1 /* Player.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AA59E6A26E8D3B90041DEE1 /* Player.png */; };
+		8AA59E7226E8DCE90041DEE1 /* appIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AA59E7126E8DCE90041DEE1 /* appIcon.png */; };
+		8AA5A6F3264381640023E706 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA5A6F2264381640023E706 /* HeaderCollectionReusableView.swift */; };
+		8AA5A6F52643818F0023E706 /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA5A6F42643818F0023E706 /* CountryCell.swift */; };
+		8AA738872687A08800213FEC /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA738862687A08800213FEC /* NetworkMonitor.swift */; };
+		8AAC87DC2696152000AB0BAC /* CachingPlayerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAC87DB2696152000AB0BAC /* CachingPlayerItem.swift */; };
+		8AB29D502637A2E900688688 /* CountryListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB29D4F2637A2E900688688 /* CountryListController.swift */; };
+		8ACD860226E8D21500955B4E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8ACD860126E8D21500955B4E /* README.md */; };
+		C857EFDCAFC09A05296A8A85 /* Pods_ArabRadio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B23868BC695405529A02973 /* Pods_ArabRadio.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4B23868BC695405529A02973 /* Pods_ArabRadio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArabRadio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A13946F26338F62003FE3DD /* ArabRadio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArabRadio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A13947226338F62003FE3DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8A13947426338F62003FE3DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8A13947626338F62003FE3DD /* RadioListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioListController.swift; sourceTree = "<group>"; };
+		8A13947B26338F62003FE3DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A13947E26338F62003FE3DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A13948026338F62003FE3DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A1A587C26822DAD00823810 /* AVPlayerSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerSingleton.swift; sourceTree = "<group>"; };
+		8A2C1A602691C485006121E0 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		8A2C1A622691C70A006121E0 /* PlayerDetailsView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayerDetailsView+Ext.swift"; sourceTree = "<group>"; };
+		8A2C1A6626923692006121E0 /* BannerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerManager.swift; sourceTree = "<group>"; };
+		8A6D819D269717FF0097A8F8 /* SavedFilesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedFilesController.swift; sourceTree = "<group>"; };
+		8A6D819F2697381D0097A8F8 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		8A6D81A12697430E0097A8F8 /* URL+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Ext.swift"; sourceTree = "<group>"; };
+		8A6D81A3269756FA0097A8F8 /* SavedFilesControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedFilesControllerCell.swift; sourceTree = "<group>"; };
+		8A6D81A5269759AA0097A8F8 /* Records.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Records.swift; sourceTree = "<group>"; };
+		8A7991E6268B4CA400C9C5C4 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		8A804C16269362B3000F6BAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8A804C18269362ED000F6BAE /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8A804C192693631E000F6BAE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8A804C1A26936C75000F6BAE /* Localizable+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Localizable+Ext.swift"; sourceTree = "<group>"; };
+		8A8D3287267A706D00C9A597 /* PlayerDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerDetailsView.xib; sourceTree = "<group>"; };
+		8A8D3289267A730300C9A597 /* PlayerDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailsView.swift; sourceTree = "<group>"; };
+		8A8DB84D2633C16200181DC6 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		8A8DB8552633C89900181DC6 /* RadioListControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioListControllerCell.swift; sourceTree = "<group>"; };
+		8A8DB8652633D83F00181DC6 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		8A93622C263CA69F00E8C5A3 /* StationsModels.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StationsModels.xcdatamodel; sourceTree = "<group>"; };
+		8A93622E263CA88200E8C5A3 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		8A99804426E22BFE00842F45 /* TitilliumWeb-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-SemiBold.ttf"; sourceTree = "<group>"; };
+		8A99804526E22BFE00842F45 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		8A99804626E22BFE00842F45 /* TitilliumWeb-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Regular.ttf"; sourceTree = "<group>"; };
+		8A9A703D2647704F00B009D7 /* SettingsControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsControllerCell.swift; sourceTree = "<group>"; };
+		8A9E00502634F03100176085 /* StationJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationJson.swift; sourceTree = "<group>"; };
+		8A9E006C26350FBD00176085 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		8A9E40342690A94F004BDD16 /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleMobileAds.xcframework; path = "Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.xcframework"; sourceTree = "<group>"; };
+		8A9E40362690F47E004BDD16 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8A9E4038269104D2004BDD16 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		8A9E46AD2684B39A0044D510 /* Double+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Ext.swift"; sourceTree = "<group>"; };
+		8AA466ED2649EF5800245851 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		8AA59E6526E8D3B90041DEE1 /* Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Settings.png; sourceTree = "<group>"; };
+		8AA59E6626E8D3B90041DEE1 /* Sleep-Mode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sleep-Mode.png"; sourceTree = "<group>"; };
+		8AA59E6726E8D3B90041DEE1 /* Radio-List.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Radio-List.png"; sourceTree = "<group>"; };
+		8AA59E6826E8D3B90041DEE1 /* Recorded-Audio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Recorded-Audio.png"; sourceTree = "<group>"; };
+		8AA59E6926E8D3B90041DEE1 /* Countries.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Countries.png; sourceTree = "<group>"; };
+		8AA59E6A26E8D3B90041DEE1 /* Player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Player.png; sourceTree = "<group>"; };
+		8AA59E7126E8DCE90041DEE1 /* appIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIcon.png; sourceTree = "<group>"; };
+		8AA5A6F2264381640023E706 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		8AA5A6F42643818F0023E706 /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
+		8AA738862687A08800213FEC /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		8AAC87DB2696152000AB0BAC /* CachingPlayerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachingPlayerItem.swift; sourceTree = "<group>"; };
+		8AB29D4F2637A2E900688688 /* CountryListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListController.swift; sourceTree = "<group>"; };
+		8AB59EBB269C4EE500BF6B27 /* ArabRadio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ArabRadio.entitlements; sourceTree = "<group>"; };
+		8ACD860126E8D21500955B4E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CFBD21AC6CBEA41EFB1C73A9 /* Pods-ArabRadio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArabRadio.debug.xcconfig"; path = "Target Support Files/Pods-ArabRadio/Pods-ArabRadio.debug.xcconfig"; sourceTree = "<group>"; };
+		EBA4448A6243AE71E2F71D69 /* Pods-ArabRadio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArabRadio.release.xcconfig"; path = "Target Support Files/Pods-ArabRadio/Pods-ArabRadio.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A13946C26338F62003FE3DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A9E40352690A94F004BDD16 /* GoogleMobileAds.xcframework in Frameworks */,
+				C857EFDCAFC09A05296A8A85 /* Pods_ArabRadio.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		723AA5988E0E268C2D54CF1E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFBD21AC6CBEA41EFB1C73A9 /* Pods-ArabRadio.debug.xcconfig */,
+				EBA4448A6243AE71E2F71D69 /* Pods-ArabRadio.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8A13946626338F62003FE3DD = {
+			isa = PBXGroup;
+			children = (
+				8ACD860126E8D21500955B4E /* README.md */,
+				8AA59E6426E8D3B90041DEE1 /* screenshots */,
+				8A13947126338F62003FE3DD /* ArabRadio */,
+				8A13947026338F62003FE3DD /* Products */,
+				723AA5988E0E268C2D54CF1E /* Pods */,
+				C5D7C2B59464A901059EAB63 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8A13947026338F62003FE3DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A13946F26338F62003FE3DD /* ArabRadio.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A13947126338F62003FE3DD /* ArabRadio */ = {
+			isa = PBXGroup;
+			children = (
+				8A1A587B26822D9A00823810 /* Singleton */,
+				8AA466EC2649EF3200245851 /* Extensions */,
+				8A9E005F26350CE300176085 /* Resources */,
+				8A9E004E2634EFF300176085 /* Model */,
+				8A8D327D267A2C5800C9A597 /* Views */,
+				8A8D327E267A2C8000C9A597 /* Controllers */,
+				8A6D819F2697381D0097A8F8 /* AppConfig.swift */,
+				8A13947226338F62003FE3DD /* AppDelegate.swift */,
+				8A13947426338F62003FE3DD /* SceneDelegate.swift */,
+				8A804C17269362B3000F6BAE /* Localizable.strings */,
+				8A8DB8652633D83F00181DC6 /* Colors.xcassets */,
+				8A13947B26338F62003FE3DD /* Assets.xcassets */,
+				8A93622B263CA69F00E8C5A3 /* StationsModels.xcdatamodeld */,
+				8A13947D26338F62003FE3DD /* LaunchScreen.storyboard */,
+				8AB59EBB269C4EE500BF6B27 /* ArabRadio.entitlements */,
+				8A9E40362690F47E004BDD16 /* GoogleService-Info.plist */,
+				8A13948026338F62003FE3DD /* Info.plist */,
+			);
+			path = ArabRadio;
+			sourceTree = "<group>";
+		};
+		8A1A587B26822D9A00823810 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				8A1A587C26822DAD00823810 /* AVPlayerSingleton.swift */,
+				8AA738862687A08800213FEC /* NetworkMonitor.swift */,
+				8A7991E6268B4CA400C9C5C4 /* NetworkRequest.swift */,
+				8A93622E263CA88200E8C5A3 /* CoreDataManager.swift */,
+				8A2C1A6626923692006121E0 /* BannerManager.swift */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		8A8D327D267A2C5800C9A597 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8AA5A6F42643818F0023E706 /* CountryCell.swift */,
+				8A8DB8552633C89900181DC6 /* RadioListControllerCell.swift */,
+				8A9A703D2647704F00B009D7 /* SettingsControllerCell.swift */,
+				8A6D81A3269756FA0097A8F8 /* SavedFilesControllerCell.swift */,
+				8AA5A6F2264381640023E706 /* HeaderCollectionReusableView.swift */,
+				8A8D3287267A706D00C9A597 /* PlayerDetailsView.xib */,
+				8A8D3289267A730300C9A597 /* PlayerDetailsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8A8D327E267A2C8000C9A597 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8A13947626338F62003FE3DD /* RadioListController.swift */,
+				8AB29D4F2637A2E900688688 /* CountryListController.swift */,
+				8A9E006C26350FBD00176085 /* SettingsController.swift */,
+				8A6D819D269717FF0097A8F8 /* SavedFilesController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8A8DB8582633D71300181DC6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8A99804526E22BFE00842F45 /* OpenSans-Regular.ttf */,
+				8A99804626E22BFE00842F45 /* TitilliumWeb-Regular.ttf */,
+				8A99804426E22BFE00842F45 /* TitilliumWeb-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8A9E004E2634EFF300176085 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8A9E00502634F03100176085 /* StationJson.swift */,
+				8A6D81A5269759AA0097A8F8 /* Records.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8A9E005F26350CE300176085 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8A8DB8582633D71300181DC6 /* Fonts */,
+				8A8DB84D2633C16200181DC6 /* Theme.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8AA466EC2649EF3200245851 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8AAC87DB2696152000AB0BAC /* CachingPlayerItem.swift */,
+				8AA466ED2649EF5800245851 /* String+Ext.swift */,
+				8A9E46AD2684B39A0044D510 /* Double+Ext.swift */,
+				8A9E4038269104D2004BDD16 /* UIView+Ext.swift */,
+				8A2C1A602691C485006121E0 /* UIColor+Ext.swift */,
+				8A2C1A622691C70A006121E0 /* PlayerDetailsView+Ext.swift */,
+				8A804C1A26936C75000F6BAE /* Localizable+Ext.swift */,
+				8A6D81A12697430E0097A8F8 /* URL+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8AA59E6426E8D3B90041DEE1 /* screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				8AA59E7126E8DCE90041DEE1 /* appIcon.png */,
+				8AA59E6526E8D3B90041DEE1 /* Settings.png */,
+				8AA59E6626E8D3B90041DEE1 /* Sleep-Mode.png */,
+				8AA59E6726E8D3B90041DEE1 /* Radio-List.png */,
+				8AA59E6826E8D3B90041DEE1 /* Recorded-Audio.png */,
+				8AA59E6926E8D3B90041DEE1 /* Countries.png */,
+				8AA59E6A26E8D3B90041DEE1 /* Player.png */,
+			);
+			path = screenshots;
+			sourceTree = "<group>";
+		};
+		C5D7C2B59464A901059EAB63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A9E40342690A94F004BDD16 /* GoogleMobileAds.xcframework */,
+				4B23868BC695405529A02973 /* Pods_ArabRadio.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A13946E26338F62003FE3DD /* ArabRadio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A13948326338F62003FE3DD /* Build configuration list for PBXNativeTarget "ArabRadio" */;
+			buildPhases = (
+				377E054446AAEED5C1534082 /* [CP] Check Pods Manifest.lock */,
+				8A13946B26338F62003FE3DD /* Sources */,
+				8A13946C26338F62003FE3DD /* Frameworks */,
+				8A13946D26338F62003FE3DD /* Resources */,
+				0B78A76AF6DB2BE5DA12CD9D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArabRadio;
+			productName = ArabRadio;
+			productReference = 8A13946F26338F62003FE3DD /* ArabRadio.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A13946726338F62003FE3DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					8A13946E26338F62003FE3DD = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 8A13946A26338F62003FE3DD /* Build configuration list for PBXProject "ArabRadio" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				fr,
+				ar,
+			);
+			mainGroup = 8A13946626338F62003FE3DD;
+			productRefGroup = 8A13947026338F62003FE3DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A13946E26338F62003FE3DD /* ArabRadio */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A13946D26338F62003FE3DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A99804926E22BFE00842F45 /* TitilliumWeb-Regular.ttf in Resources */,
+				8A9E40372690F47E004BDD16 /* GoogleService-Info.plist in Resources */,
+				8ACD860226E8D21500955B4E /* README.md in Resources */,
+				8A99804726E22BFE00842F45 /* TitilliumWeb-SemiBold.ttf in Resources */,
+				8AA59E7226E8DCE90041DEE1 /* appIcon.png in Resources */,
+				8AA59E6F26E8D3B90041DEE1 /* Countries.png in Resources */,
+				8AA59E6D26E8D3B90041DEE1 /* Radio-List.png in Resources */,
+				8AA59E6C26E8D3B90041DEE1 /* Sleep-Mode.png in Resources */,
+				8AA59E6B26E8D3B90041DEE1 /* Settings.png in Resources */,
+				8A13947F26338F62003FE3DD /* LaunchScreen.storyboard in Resources */,
+				8A13947C26338F62003FE3DD /* Assets.xcassets in Resources */,
+				8AA59E7026E8D3B90041DEE1 /* Player.png in Resources */,
+				8A804C15269362B3000F6BAE /* Localizable.strings in Resources */,
+				8AA59E6E26E8D3B90041DEE1 /* Recorded-Audio.png in Resources */,
+				8A8DB8662633D83F00181DC6 /* Colors.xcassets in Resources */,
+				8A99804826E22BFE00842F45 /* OpenSans-Regular.ttf in Resources */,
+				8A8D3288267A706D00C9A597 /* PlayerDetailsView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B78A76AF6DB2BE5DA12CD9D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArabRadio/Pods-ArabRadio-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArabRadio/Pods-ArabRadio-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ArabRadio/Pods-ArabRadio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		377E054446AAEED5C1534082 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArabRadio-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A13946B26338F62003FE3DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A2C1A612691C485006121E0 /* UIColor+Ext.swift in Sources */,
+				8A1A587D26822DAD00823810 /* AVPlayerSingleton.swift in Sources */,
+				8A9E00512634F03100176085 /* StationJson.swift in Sources */,
+				8AA738872687A08800213FEC /* NetworkMonitor.swift in Sources */,
+				8A2C1A632691C70A006121E0 /* PlayerDetailsView+Ext.swift in Sources */,
+				8A804C1B26936C75000F6BAE /* Localizable+Ext.swift in Sources */,
+				8A13947726338F62003FE3DD /* RadioListController.swift in Sources */,
+				8A9A703E2647704F00B009D7 /* SettingsControllerCell.swift in Sources */,
+				8A8D328A267A730300C9A597 /* PlayerDetailsView.swift in Sources */,
+				8A8DB8562633C89900181DC6 /* RadioListControllerCell.swift in Sources */,
+				8A8DB84E2633C16200181DC6 /* Theme.swift in Sources */,
+				8AAC87DC2696152000AB0BAC /* CachingPlayerItem.swift in Sources */,
+				8AA5A6F52643818F0023E706 /* CountryCell.swift in Sources */,
+				8A6D81A22697430E0097A8F8 /* URL+Ext.swift in Sources */,
+				8A9E006D26350FBD00176085 /* SettingsController.swift in Sources */,
+				8A7991E7268B4CA400C9C5C4 /* NetworkRequest.swift in Sources */,
+				8A13947326338F62003FE3DD /* AppDelegate.swift in Sources */,
+				8A6D81A02697381D0097A8F8 /* AppConfig.swift in Sources */,
+				8A9E4039269104D2004BDD16 /* UIView+Ext.swift in Sources */,
+				8A13947526338F62003FE3DD /* SceneDelegate.swift in Sources */,
+				8A6D81A4269756FA0097A8F8 /* SavedFilesControllerCell.swift in Sources */,
+				8A6D819E269717FF0097A8F8 /* SavedFilesController.swift in Sources */,
+				8A9E46AE2684B39A0044D510 /* Double+Ext.swift in Sources */,
+				8AA5A6F3264381640023E706 /* HeaderCollectionReusableView.swift in Sources */,
+				8A2C1A6726923692006121E0 /* BannerManager.swift in Sources */,
+				8A93622D263CA69F00E8C5A3 /* StationsModels.xcdatamodeld in Sources */,
+				8A93622F263CA88200E8C5A3 /* CoreDataManager.swift in Sources */,
+				8A6D81A6269759AA0097A8F8 /* Records.swift in Sources */,
+				8AA466EE2649EF5800245851 /* String+Ext.swift in Sources */,
+				8AB29D502637A2E900688688 /* CountryListController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8A13947D26338F62003FE3DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A13947E26338F62003FE3DD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8A804C17269362B3000F6BAE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A804C16269362B3000F6BAE /* en */,
+				8A804C18269362ED000F6BAE /* fr */,
+				8A804C192693631E000F6BAE /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A13948126338F62003FE3DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8A13948226338F62003FE3DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A13948426338F62003FE3DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFBD21AC6CBEA41EFB1C73A9 /* Pods-ArabRadio.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ArabRadio/ArabRadio.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4Q562DAKAQ;
+				INFOPLIST_FILE = ArabRadio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lefdilia.ArabRadio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A13948526338F62003FE3DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBA4448A6243AE71E2F71D69 /* Pods-ArabRadio.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ArabRadio/ArabRadio.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4Q562DAKAQ;
+				INFOPLIST_FILE = ArabRadio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lefdilia.ArabRadio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A13946A26338F62003FE3DD /* Build configuration list for PBXProject "ArabRadio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A13948126338F62003FE3DD /* Debug */,
+				8A13948226338F62003FE3DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A13948326338F62003FE3DD /* Build configuration list for PBXNativeTarget "ArabRadio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A13948426338F62003FE3DD /* Debug */,
+				8A13948526338F62003FE3DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8A93622B263CA69F00E8C5A3 /* StationsModels.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8A93622C263CA69F00E8C5A3 /* StationsModels.xcdatamodel */,
+			);
+			currentVersion = 8A93622C263CA69F00E8C5A3 /* StationsModels.xcdatamodel */;
+			path = StationsModels.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8A13946726338F62003FE3DD /* Project object */;
+}

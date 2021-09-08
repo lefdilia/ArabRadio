@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>564874298908-sg0pfp6v779b85h6geq6tjf1amre9ddk.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.564874298908-sg0pfp6v779b85h6geq6tjf1amre9ddk</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCV1lG2jPCtjfVUZla9XacmsodqoCsXvV0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>564874298908</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.lefdilia.ArabRadio</string>
+	<key>PROJECT_ID</key>
+	<string>arabradio-a0eb3</string>
+	<key>STORAGE_BUCKET</key>
+	<string>arabradio-a0eb3.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:564874298908:ios:8ea5e1f2fe9290f97f81d9</string>
+	<key>ADMOB_APP_ID</key>
+	<string>ca-app-pub-3940256099942544~1458002511</string>
+</dict>
+</plist>

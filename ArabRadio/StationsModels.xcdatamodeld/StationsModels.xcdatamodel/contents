@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20F71" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Country" representedClassName="Country" syncable="YES" codeGenerationType="class">
+        <attribute name="image" attributeType="String"/>
+        <attribute name="status" optional="YES" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
+        <attribute name="title" attributeType="String"/>
+        <relationship name="stationRS" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Station" inverseName="countryRS" inverseEntity="Station"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="title"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Station" representedClassName="Station" syncable="YES" codeGenerationType="class">
+        <attribute name="country" attributeType="String"/>
+        <attribute name="image" attributeType="String"/>
+        <attribute name="isFavorite" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="sDescription" optional="YES" attributeType="String"/>
+        <attribute name="signal" optional="YES" attributeType="String"/>
+        <attribute name="status" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
+        <attribute name="stream" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData" customClassName="[String]"/>
+        <attribute name="title" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData" customClassName="[String]"/>
+        <relationship name="countryRS" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Country" inverseName="stationRS" inverseEntity="Country"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="title"/>
+                <constraint value="signal"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="Country" positionX="-54" positionY="-9" width="128" height="89"/>
+        <element name="Station" positionX="-63" positionY="-18" width="128" height="14"/>
+    </elements>
+</model>

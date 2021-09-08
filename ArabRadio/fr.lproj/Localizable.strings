@@ -1,0 +1,51 @@
+//CountryListController
+"Arab Radio" = "Arab Radio";
+"Updating Stations" = "Les Stations Radio";
+
+//HeaderCollectionReusableView
+"Country List" = "Liste des Pays";
+
+//RadioListController
+"Hit Radio..." = "Hit Radio...";
+"Radio Stations" = "Liste Des Stations";
+"Updating Stations" = "Mise à jour des stations";
+"Stations" = "Liste des radios";
+"No stations found..." = "Aucune station trouvée...";
+
+//RadioListControllerCell
+"Stream" = "Flux";
+"Signal" = "Signal";
+
+//SettingsController
+"Listen Only on Wi-fi" = "Écouter uniquement en Wi-fi";
+"Autoplay on app start" = "Lecture automatique au lancement";
+
+"Reset Application" = "Réinitialiser l'application";
+"Would you like to reset the application to initial setup ?" = "Souhaitez-vous réinitialiser l'application à la configuration initiale ?";
+"Cancel" = "Annuler";
+"Reset" = "Réinitialiser";
+"Settings" = "Paramètres";
+"User Preferences" = "Préférences de l'utilisateur";
+
+"Change Country" = "Changer le Pays";
+
+//SettingsControllerCell
+"Player stopped, You are running on Cellular Data" = "Lecteur arrêté. Vous utilisez des données cellulaires";
+
+//PlayerDetailsView (Previously same value listed)
+"You can play station on Wi-fi Only" = "Vous pouvez écouter la radio en Wifi uniquement";
+"Sleep in" = "Mise en veille dans";
+"Dismiss" = "Fermer";
+
+"Sleep Timer" = "Mise en veille";
+"Cancel" = "Annuler";
+"Start" = "Commencer";
+"Remove Sleep" = "Désactiver la mise en veille";
+"Remaining time to play Station before stop!" = "Le temps restant avant d'arrêter la radio";
+
+
+//SavedFilescontroller
+"Recording" = "Enregistrement";
+"Recorded Audio Files" = "Audios Enregistré";
+"Recorded Files" = "Fichiers enregistrés";
+"No recording files found" = "Aucun fichier enregistré trouvé";

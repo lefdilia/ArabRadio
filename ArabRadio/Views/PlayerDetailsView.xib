@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TitilliumWeb-Regular.ttf">
+            <string>TitilliumWeb-Regular</string>
+        </array>
+        <array key="TitilliumWeb-SemiBold.ttf">
+            <string>TitilliumWeb-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="piv-5E-rnR" customClass="PlayerDetailsView" customModule="ArabRadio" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vAG-bA-Ezn">
+                    <rect key="frame" x="0.0" y="44" width="414" height="72"/>
+                    <subviews>
+                        <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NyS-qN-KQI">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="0.66666666666666663"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="KYd-bB-kyc"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hF0-yi-ibu">
+                            <rect key="frame" x="8" y="8" width="398" height="56"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RadioImage" translatesAutoresizingMaskIntoConstraints="NO" id="0zN-8u-B8z">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="56"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="50M-TO-tZN"/>
+                                    </constraints>
+                                </imageView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="oEo-Ac-UvP">
+                                    <rect key="frame" x="58" y="0.0" width="288" height="56"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Radio Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwE-6h-LUt">
+                                            <rect key="frame" x="0.0" y="0.0" width="77.333333333333329" height="26"/>
+                                            <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="17"/>
+                                            <color key="textColor" name="darkBlue"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Signal Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anD-Fz-Jdb">
+                                            <rect key="frame" x="0.0" y="16" width="57" height="40"/>
+                                            <fontDescription key="fontDescription" name="TitilliumWeb-Regular" family="Titillium Web" pointSize="12"/>
+                                            <color key="textColor" name="darkBlue"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QuA-7a-H44">
+                                    <rect key="frame" x="354" y="0.0" width="44" height="56"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="44" id="hN2-LO-YfL"/>
+                                    </constraints>
+                                    <state key="normal" image="AVPause"/>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="NyS-qN-KQI" firstAttribute="leading" secondItem="vAG-bA-Ezn" secondAttribute="leading" id="719-lr-1j0"/>
+                        <constraint firstItem="hF0-yi-ibu" firstAttribute="top" secondItem="vAG-bA-Ezn" secondAttribute="top" constant="8" id="Anc-qG-z7H"/>
+                        <constraint firstAttribute="height" constant="72" id="KxB-qm-bRD"/>
+                        <constraint firstAttribute="bottom" secondItem="hF0-yi-ibu" secondAttribute="bottom" constant="8" id="MaA-da-Nfd"/>
+                        <constraint firstItem="hF0-yi-ibu" firstAttribute="leading" secondItem="vAG-bA-Ezn" secondAttribute="leading" constant="8" id="NWn-Jk-HSg"/>
+                        <constraint firstAttribute="trailing" secondItem="hF0-yi-ibu" secondAttribute="trailing" constant="8" id="PK9-4V-JON"/>
+                        <constraint firstAttribute="trailing" secondItem="NyS-qN-KQI" secondAttribute="trailing" id="oIW-1k-vTg"/>
+                        <constraint firstItem="NyS-qN-KQI" firstAttribute="top" secondItem="vAG-bA-Ezn" secondAttribute="top" id="tzh-Uu-dNq"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KTL-RM-jw6">
+                    <rect key="frame" x="24" y="44" width="366" height="794"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVV-AL-awf">
+                            <rect key="frame" x="0.0" y="0.0" width="366" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="ace-M0-uQ5"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="16"/>
+                            <state key="normal" title="">
+                                <color key="titleColor" name="darkGreen"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="Dismiss"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="handleDismiss:" destination="piv-5E-rnR" eventType="touchUpInside" id="MiQ-3I-YCB"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F4s-3P-WhU">
+                            <rect key="frame" x="0.0" y="40" width="366" height="30"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="nnS-3e-ayW"/>
+                            </constraints>
+                        </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RadioImage" translatesAutoresizingMaskIntoConstraints="NO" id="6iN-8U-aqr">
+                            <rect key="frame" x="0.0" y="70.000000000000014" width="366" height="215.33333333333337"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="6iN-8U-aqr" secondAttribute="height" multiplier="1.7" id="hug-cI-keO"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3b0-Bq-HI8">
+                            <rect key="frame" x="0.0" y="285.33333333333331" width="366" height="18"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="RrV-qG-viQ"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tEq-os-goG">
+                            <rect key="frame" x="0.0" y="303.33333333333331" width="366" height="42"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CFT-Pq-NPJ">
+                                    <rect key="frame" x="112" y="0.0" width="142" height="42"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tZ-s3-bkJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="42" height="42"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="42" id="cW8-y1-RrC"/>
+                                            </constraints>
+                                            <state key="normal" title="Button" image="AVPlay"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="win-he-ndL">
+                                            <rect key="frame" x="50" y="0.0" width="42" height="42"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="42" id="W6e-cA-THw"/>
+                                            </constraints>
+                                            <state key="normal" title="Button" image="AVStop"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A60-cD-SWa">
+                                            <rect key="frame" x="100" y="0.0" width="42" height="42"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="42" id="BHu-Tk-YXV"/>
+                                            </constraints>
+                                            <state key="normal" title="Button" image="Record"/>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="42" id="12t-NN-AI7"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UF4-LV-yNL">
+                            <rect key="frame" x="0.0" y="345.33333333333331" width="366" height="24"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="fI8-tn-vpl"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Radio Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecC-z6-IEa">
+                            <rect key="frame" x="0.0" y="369.33333333333331" width="366" height="38"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="38" id="3Za-ws-RIj"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="25"/>
+                            <color key="textColor" name="darkBlue"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donec aliquet nunc Sed elite" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDk-FM-fXT">
+                            <rect key="frame" x="0.0" y="407.33333333333331" width="366" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="31" id="ipa-yw-rQS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="20"/>
+                            <color key="textColor" name="darkBlue"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bA-ZR-Vhp">
+                            <rect key="frame" x="0.0" y="438.33333333333331" width="366" height="27"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="27" id="cgD-N4-adu"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="TitilliumWeb-Regular" family="Titillium Web" pointSize="18"/>
+                            <color key="textColor" name="alphaDarkBlue"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ktv-mx-bfL">
+                            <rect key="frame" x="0.0" y="465.33333333333331" width="366" height="24"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="L4a-ki-IbD"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="sH0-dn-QYh">
+                            <rect key="frame" x="0.0" y="489.33333333333337" width="366" height="34"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPS-uX-vyz">
+                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="34"/>
+                                    <state key="normal" image="volume-mute"/>
+                                    <connections>
+                                        <action selector="setVolumeOff:" destination="piv-5E-rnR" eventType="touchUpInside" id="q3e-An-5Qy"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GZ3-aT-tcc">
+                                    <rect key="frame" x="4" y="0.0" width="10" height="34"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="10" id="Pgv-W5-3a4"/>
+                                    </constraints>
+                                </view>
+                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.29999999999999999" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="fNk-gJ-pXj">
+                                    <rect key="frame" x="16" y="0.0" width="334" height="35"/>
+                                    <color key="tintColor" name="alphaDarkBlue"/>
+                                    <connections>
+                                        <action selector="handleVolumeChange:" destination="piv-5E-rnR" eventType="valueChanged" id="bdp-ec-aKs"/>
+                                    </connections>
+                                </slider>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ws1-K8-0jP">
+                                    <rect key="frame" x="352" y="0.0" width="10" height="34"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="10" id="rWw-fP-hMH"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cw5-YV-GdM">
+                                    <rect key="frame" x="366" y="0.0" width="0.0" height="34"/>
+                                    <state key="normal" image="volume-full"/>
+                                    <connections>
+                                        <action selector="setVolumetFull:" destination="piv-5E-rnR" eventType="touchUpInside" id="PVJ-ic-VNm"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="VVM-13-gPu"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="uQR-qH-hWp">
+                            <rect key="frame" x="0.0" y="523.33333333333337" width="366" height="234.66666666666663"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dxe-cd-XOv">
+                                    <rect key="frame" x="0.0" y="0.0" width="366" height="234.66666666666666"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipE-6E-nxw">
+                                            <rect key="frame" x="0.0" y="92.333333333333258" width="50" height="50"/>
+                                            <fontDescription key="fontDescription" name="TitilliumWeb-Regular" family="Titillium Web" pointSize="14"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AWc-17-XtF">
+                                            <rect key="frame" x="333" y="104.66666666666663" width="33" height="25"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="33" id="ftx-xT-EOq"/>
+                                            </constraints>
+                                            <state key="normal" title="Button" image="sleep"/>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="94S-8i-z0N">
+                            <rect key="frame" x="0.0" y="758" width="366" height="36"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="Pah-Rd-gWU"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="mXC-Yw-yYH"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="KTL-RM-jw6" firstAttribute="leading" secondItem="mXC-Yw-yYH" secondAttribute="leading" constant="24" id="077-cV-Hw9"/>
+                <constraint firstItem="mXC-Yw-yYH" firstAttribute="trailing" secondItem="vAG-bA-Ezn" secondAttribute="trailing" id="48y-82-UEd"/>
+                <constraint firstItem="mXC-Yw-yYH" firstAttribute="trailing" secondItem="KTL-RM-jw6" secondAttribute="trailing" constant="24" id="jzx-fF-uDH"/>
+                <constraint firstItem="vAG-bA-Ezn" firstAttribute="leading" secondItem="mXC-Yw-yYH" secondAttribute="leading" id="pTU-F6-Ebf"/>
+                <constraint firstItem="vAG-bA-Ezn" firstAttribute="top" secondItem="mXC-Yw-yYH" secondAttribute="top" id="qlJ-l1-K8y"/>
+                <constraint firstItem="mXC-Yw-yYH" firstAttribute="bottom" secondItem="KTL-RM-jw6" secondAttribute="bottom" constant="24" id="tiT-ap-4QN"/>
+                <constraint firstItem="KTL-RM-jw6" firstAttribute="top" secondItem="mXC-Yw-yYH" secondAttribute="top" id="vfR-Ws-dd8"/>
+            </constraints>
+            <connections>
+                <outlet property="SoundControl" destination="fNk-gJ-pXj" id="UGw-ZS-PN9"/>
+                <outlet property="dismissButtonTop" destination="VVV-AL-awf" id="3rl-NX-eel"/>
+                <outlet property="maximizedStackView" destination="KTL-RM-jw6" id="hL0-sL-YF6"/>
+                <outlet property="miniPlayPauseButton" destination="QuA-7a-H44" id="9No-Yx-h4F"/>
+                <outlet property="miniPlayerView" destination="vAG-bA-Ezn" id="xgT-Ib-cL0"/>
+                <outlet property="miniStationImageView" destination="0zN-8u-B8z" id="I5E-n3-gdD"/>
+                <outlet property="miniStationSignal" destination="anD-Fz-Jdb" id="NCi-LE-Yh1"/>
+                <outlet property="miniStationTitle" destination="kwE-6h-LUt" id="st7-kZ-NLd"/>
+                <outlet property="playPauseButton" destination="2tZ-s3-bkJ" id="P1i-NR-Dff"/>
+                <outlet property="radioGenresLabel" destination="fDk-FM-fXT" id="Kmz-w7-H8A"/>
+                <outlet property="radioImageView" destination="6iN-8U-aqr" id="nzF-Vn-VWP"/>
+                <outlet property="radioSignalLabel" destination="3bA-ZR-Vhp" id="ncY-C9-WFL"/>
+                <outlet property="radioTitleLabel" destination="ecC-z6-IEa" id="l7E-ma-Rmn"/>
+                <outlet property="recordButton" destination="A60-cD-SWa" id="sn8-od-FfQ"/>
+                <outlet property="sleepButton" destination="AWc-17-XtF" id="Zlh-BU-30Q"/>
+                <outlet property="sleepRemainingTimeLabel" destination="ipE-6E-nxw" id="UdB-fx-0pj"/>
+                <outlet property="stopButton" destination="win-he-ndL" id="fZa-ey-wuU"/>
+            </connections>
+            <point key="canvasLocation" x="1041" y="96"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="AVPause" width="44" height="44"/>
+        <image name="AVPlay" width="43" height="42"/>
+        <image name="AVStop" width="43" height="42"/>
+        <image name="RadioImage" width="260" height="325"/>
+        <image name="Record" width="43" height="42"/>
+        <image name="sleep" width="28" height="25"/>
+        <image name="volume-full" width="20" height="18"/>
+        <image name="volume-mute" width="20" height="20"/>
+        <namedColor name="alphaDarkBlue">
+            <color red="0.13725490196078433" green="0.36078431372549019" blue="0.4823529411764706" alpha="0.69999998807907104" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="darkBlue">
+            <color red="0.13725490196078433" green="0.36078431372549019" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="darkGreen">
+            <color red="0.40000000000000002" green="0.60784313725490191" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

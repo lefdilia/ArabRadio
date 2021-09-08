@@ -1,0 +1,51 @@
+//CountryListController
+"Arab Radio" = "راديو العرب";
+"Updating Stations" = "تحديث المحطات";
+
+//HeaderCollectionReusableView
+"Country List" = "قائمة الدول";
+
+//RadioListController
+"Hit Radio..." = "Hit Radio...";
+"Radio Stations" = "المحطات الإذاعية";
+"Updating Stations" = "تحديث المحطات";
+"Stations" = "قائمة المحطات الاذاعية ";
+"No stations found..." = "لا توجد أي محطة موافقة لكلمة البحث";
+
+//RadioListControllerCell
+"Stream" = "تدفق";
+"Signal" = "الإشارة";
+
+//SettingsController
+"Listen Only on Wi-fi" = "استمع فقط على شبكة الواي فاي";
+"Autoplay on app start" = "التشغيل التلقائي عند بدء التطبيق";
+
+"Reset Application" = "إعادة ضبط التطبيق";
+"Would you like to reset the application to initial setup ?" = "هل ترغب في إعادة تعيين التطبيق إلى الإعدادات الاولية ؟";
+"Cancel" = "إلغاء";
+"Reset" = "إعادة الضبط";
+"Settings" = "الإعدادات";
+"User Preferences" = "خيارات المستخدم";
+
+"Change Country" = "تغيير الدولة";
+
+//SettingsControllerCell
+"Player stopped, You are running on Cellular Data" = "المشغل توقف ،أنت متصل على شبكة البيانات الخلوية";
+
+//PlayerDetailsView (Previously same value listed)
+"You can play station on Wi-fi Only" = "يمكنك تشغيل المحطة على الواي فاي فقط";
+"Sleep in" = "سيتم ايقاف المشغل بعد";
+"Dismiss" = "إغلاق";
+
+"Sleep Timer" = "الإيقاف التلقائي للمشغل";
+"Cancel" = "إلغاء";
+"Start" = "بدأ";
+"Remove Sleep" = "إزالة وضع السكون";
+"Remaining time to play Station before stop!" = "الوقت المتبقي قبل إيقاف المشغل";
+
+
+//SavedFilescontroller
+"Recording" = "تسجيل";
+"Recorded Audio Files" =  "الصوتيات المسجلة";
+"Recorded Files" = "الملفات المسجلة";
+"No recording files found" = "لم يتم العثور على أي ملفات مسجلة";
